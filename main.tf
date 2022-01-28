@@ -21,8 +21,8 @@ tags = {
 }
 
 resource "aws_s3_bucket" "demos3" {
-    bucket = "${var.bucket_name}" 
-    acl = "${var.acl_value}"   
+    bucket = "new_bucket_using_terraform_cloud" 
+    acl = "private"   
 }
 
 
