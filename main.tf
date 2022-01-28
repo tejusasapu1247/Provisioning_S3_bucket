@@ -8,20 +8,20 @@ terraform {
  required_version = ">=0.14.9"
 }
 provider "aws" {
- region = "ap-south-1"
+ region = "us-east-1"
  profile = "default"
 }
 
 resource "aws_instance" "app_server" {
  instance_type = "t2.micro"
- ami = "ami-08ee6644906ff4d6c"
+ ami = "ami-0a8b4cd432b1c3063"
 tags = {
  Name = "MyVPC"
  }
 }
 
 resource "aws_s3_bucket" "demos3" {
-    bucket = "bucket-from-terraform-cloud" 
+    bucket = "bucket-from-terraform-cloud-and-vcs" 
     acl = "private"   
 }
 
