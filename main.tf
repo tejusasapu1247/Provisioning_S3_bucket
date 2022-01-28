@@ -21,7 +21,7 @@ tags = {
 }
 
 resource "aws_s3_bucket" "demos3" {
-    bucket = "bucket_from_terraform_cloud" 
+    bucket = "bucket-from-terraform-cloud" 
     acl = "private"   
 }
 
