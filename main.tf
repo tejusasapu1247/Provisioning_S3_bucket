@@ -9,7 +9,7 @@ terraform {
 }
 provider "aws" {
  region = "ap-south-1"
- region = "default"
+ profile = "default"
 }
 
 resource "aws_instance" "app_server" {
