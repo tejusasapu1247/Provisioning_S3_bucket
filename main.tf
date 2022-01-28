@@ -22,7 +22,7 @@ tags = {
 
 resource "aws_s3_bucket" "demos3" {
     bucket = "${var.bucket_name}" 
-    acl = "${acl_value}"   
+    acl = "${var.acl_value}"   
 }
 
 
